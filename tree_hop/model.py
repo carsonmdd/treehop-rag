@@ -153,7 +153,6 @@ class TreeHopModel(
         license="mit",
         tags=["Retrieval-Augmented Generation", "Information Retrieval", "multi-hop question answering"],
         repo_url="https://github.com/allen-li1231/treehop-rag/",
-        paper_url="https://arxiv.org/abs/2504.20114",
     ):
     def __init__(
         self,

@@ -22,7 +22,8 @@ def model_file_name_to_params(name):
 
 @functools.lru_cache()
 def get_dataset(dataset_name):
-    df_QA = pd.read_json(f"eval_data/{dataset_name}_dev_processed.jsonl", lines=True)
+    # df_QA = pd.read_json(f"eval_data/{dataset_name}_dev_processed.jsonl", lines=True)
+    df_QA = pd.read_json(f"eval_data/{dataset_name}_dev_processed_10.jsonl", lines=True)
     df_QA = (df_QA[~df_QA["type"].isin(["comparison", # 2wiki
                                         # multihop_rag
                                         "comparison_query", "null_query", "temporal_query"
